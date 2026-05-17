@@ -1,4 +1,5 @@
 from __future__ import annotations
+from homeassistant.helpers import config_validation as cv
 import json, logging, time
 from pathlib import Path
 from typing import Any
@@ -6,6 +7,7 @@ from .aiot_cloud import AqaraCredentials,AqaraOpenApi
 from .aiot_manager import AiotManager,AqaraDataCoordinator
 from .const import DOMAIN,HASS_DATA_COORDINATOR,HASS_DATA_MANAGER,PLATFORMS
 _LOGGER=logging.getLogger(__name__)
+CONFIG_SCHEMA = cv.config_entry_only_config_schema(DOMAIN)
 CAMERA_EVENT_RESOURCE_IDS=([f"13.{i}.85" for i in range(1,181)]+[f"4.{i}.85" for i in range(1,181)]+[f"14.{i}.85" for i in range(1,181)]+["13.95.85","13.12.85","13.9.85","13.10.85","13.11.85","13.97.85"])
 async def async_setup(hass,config): hass.data.setdefault(DOMAIN,{}); return True
 async def _async_update_listener(hass,entry): await hass.config_entries.async_reload(entry.entry_id)
