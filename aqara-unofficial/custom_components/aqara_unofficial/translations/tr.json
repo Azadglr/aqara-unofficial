@@ -1,0 +1,54 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Aqara Unofficial Bağlantısı",
+        "data": {
+          "account": "Aqara hesabı",
+          "country_code": "Bulut bölgesi",
+          "refresh_token": "Refresh token",
+          "app_id": "App ID",
+          "key_id": "Key ID",
+          "app_key": "App Key"
+        }
+      },
+      "code": {
+        "title": "Doğrulama kodu",
+        "data": {
+          "auth_code": "Doğrulama kodu"
+        }
+      },
+      "select_devices": {
+        "title": "Cihaz seç",
+        "data": {
+          "selected_devices": "Cihazlar"
+        }
+      }
+    },
+    "error": {
+      "auth_code_failed": "Doğrulama kodu istenemedi.",
+      "token_failed": "Access token alınamadı.",
+      "refresh_failed": "Token yenilenemedi.",
+      "invalid_json": "JSON geçersiz.",
+      "device_query_failed": "Cihaz listesi alınamadı."
+    },
+    "abort": {
+      "not_authenticated": "Kimlik doğrulama yapılmadı."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Aqara Unofficial ayarları",
+        "data": {
+          "selected_devices": "Cihazlar",
+          "face_map_lines": "Tanınan kişiler"
+        }
+      }
+    },
+    "error": {
+      "invalid_json": "Her satır şu formatta olmalı: ID = İsim",
+      "device_query_failed": "Cihaz listesi alınamadı."
+    }
+  }
+}

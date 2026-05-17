@@ -1,0 +1,27 @@
+"""Constants for Aqara Unofficial """
+DOMAIN = "aqara_unofficial"
+CONF_FIELD_ACCOUNT = "account"
+CONF_FIELD_COUNTRY_CODE = "country_code"
+CONF_FIELD_AUTH_CODE = "auth_code"
+CONF_FIELD_REFRESH_TOKEN = "refresh_token"
+CONF_FIELD_SELECTED_DEVICES = "selected_devices"
+CONF_FIELD_FACE_MAP_LINES = "face_map_lines"
+SERVER_COUNTRY_CODES = ["CN", "USA", "KR", "RU", "GER", "SG"]
+SERVER_COUNTRY_CODES_DEFAULT = "GER"
+CONF_ENTRY_AUTH_ACCOUNT = "account"
+CONF_ENTRY_AUTH_ACCOUNT_TYPE = "account_type"
+CONF_ENTRY_AUTH_COUNTRY_CODE = "country_code"
+CONF_ENTRY_AUTH_OPENID = "open_id"
+CONF_ENTRY_AUTH_ACCESS_TOKEN = "access_token"
+CONF_ENTRY_AUTH_REFRESH_TOKEN = "refresh_token"
+CONF_ENTRY_AUTH_EXPIRES_IN = "expires_in"
+CONF_ENTRY_AUTH_EXPIRES_TIME = "expires_datetime"
+CONF_ENTRY_SELECTED_DEVICES = "selected_devices"
+CONF_ENTRY_FACE_MAP = "face_map_json"
+HASS_DATA_MANAGER = "aqara_manager"
+HASS_DATA_COORDINATOR = "coordinator"
+PLATFORMS = ["sensor", "binary_sensor", "switch", "number", "lock"]
+EVENT_SCAN_INTERVAL_SECONDS = 3
+RESOURCE_SCAN_INTERVAL_SECONDS = 60
+DOORBELL_EVENT_HOLD_SECONDS = 15
+CAMERA_DETECTION_HOLD_SECONDS = 30

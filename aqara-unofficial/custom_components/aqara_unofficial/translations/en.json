@@ -1,0 +1,54 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Aqara Unofficial Connection",
+        "data": {
+          "account": "Aqara account",
+          "country_code": "Cloud region",
+          "refresh_token": "Refresh token",
+          "app_id": "App ID",
+          "key_id": "Key ID",
+          "app_key": "App Key"
+        }
+      },
+      "code": {
+        "title": "Verification code",
+        "data": {
+          "auth_code": "Verification code"
+        }
+      },
+      "select_devices": {
+        "title": "Select devices",
+        "data": {
+          "selected_devices": "Devices"
+        }
+      }
+    },
+    "error": {
+      "auth_code_failed": "Could not request verification code.",
+      "token_failed": "Could not get access token.",
+      "refresh_failed": "Could not refresh token.",
+      "invalid_json": "Invalid JSON.",
+      "device_query_failed": "Could not fetch device list."
+    },
+    "abort": {
+      "not_authenticated": "Not authenticated."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Aqara Unofficial options",
+        "data": {
+          "selected_devices": "Devices",
+          "face_map_lines": "Recognized people"
+        }
+      }
+    },
+    "error": {
+      "invalid_json": "Each line must use this format: ID = Name",
+      "device_query_failed": "Could not fetch device list."
+    }
+  }
+}

@@ -1,0 +1,37 @@
+dump_qlink_traits:
+  name: Dump qlink trait config
+  description: Write Aqara qlink trait configuration to /config/aqara_unofficial_qlink_traits.json.
+  fields: {}
+discover_camera_events:
+  name: Discover camera events
+  description: Probe possible camera event history resources and write /config/aqara_unofficial_camera_events_*.json.
+  fields:
+    size:
+      name: History size
+      description: Number of history records requested for each resource query.
+      required: false
+      default: 50
+      selector:
+        number:
+          min: 1
+          max: 100
+          step: 1
+          mode: box
+    batch_size:
+      name: Batch size
+      description: Number of resource IDs queried in one request. 20 is recommended.
+      required: false
+      default: 20
+      selector:
+        number:
+          min: 1
+          max: 30
+          step: 1
+          mode: box
+    include_all:
+      name: Include empty responses
+      description: Also write empty history responses. This can create large files and is normally disabled.
+      required: false
+      default: false
+      selector:
+        boolean:
